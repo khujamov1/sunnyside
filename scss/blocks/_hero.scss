@@ -1,0 +1,43 @@
+.hero {
+    padding-top: 56px;
+    padding-bottom: 136px;
+    background-image: url("/images/herobg.png");
+    background-repeat: no-repeat;
+    background-position: center -88px;
+}
+.hero__inner {
+    max-width: 327px;
+    margin: 0 auto;
+}
+.hero__img {
+    display: block;
+    margin: 0 auto;
+}
+.hero__title {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 6.25px;
+    margin-top: 0;
+    margin-bottom: 52px;
+    color: #FFFFFF;
+}
+
+@media only screen and (min-width: 900px) {
+    .hero {
+        padding-top: 84px;
+        padding-bottom: 332px;
+        background-image: url("/images/herodesk.png");
+        background-repeat: no-repeat;
+    }
+    .hero__inner {
+        max-width: 750px;
+    }
+    .hero__title {
+        font-size: 56px;
+        margin-bottom: 96px;
+    }
+}

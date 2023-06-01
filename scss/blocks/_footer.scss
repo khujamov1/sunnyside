@@ -1,0 +1,41 @@
+@use "../mixins";
+
+.site-footer {
+    padding-top: 64px;
+    padding-bottom: 80px;
+    background-color: #90D4C6;
+}
+.footer__inner {
+    width: 300px;
+    margin: 0 auto;
+}
+.footer__img {
+    display: block;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-left: auto
+}
+.footer__list {
+    @include mixins.listUnstyled;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+.footer__item {
+    font-family: "Barlow";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.128571px;
+}
+.footer__link {
+    text-decoration: none;
+    color: #458D7E;
+}
+.footer__socials {
+    @include mixins.listUnstyled;
+    display: flex;
+    justify-content: space-between;
+    width: 192px;
+    margin: 0 auto;
+}

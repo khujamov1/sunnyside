@@ -1,0 +1,65 @@
+@use "../mixins";
+.site-header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #71C4D3;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 124px;
+    height: 24px;
+}
+.header__nav {
+    display: none;
+}
+.header__list {
+    @include mixins.listUnstyled;
+    display: flex;
+}
+.header__item:not(:last-child) {
+    margin-right: 47px;
+}
+.header__item-link {
+    font-family: "Barlow";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.128571px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.header__item-link--last {
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.107143px;
+    color: #24303E;
+    width: 140px;
+    padding: 16px 30px 15px 32px;
+    background: #FFFFFF;
+    color: #24303E;
+    border-radius: 28px;
+}
+.header__button {
+    width: 24px;
+    height: 18px;
+    background-color: transparent;
+    background-image: url("/images/hamburger.svg");
+    border: none;
+}
+
+
+
+@media only screen and (min-width: 900px) {
+    .header__nav {
+        display: block;
+    }
+    .header__button {
+        display: none;
+    }
+}

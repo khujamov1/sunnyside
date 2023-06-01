@@ -1,0 +1,69 @@
+@use "../mixins";
+
+.comments__inner {
+    padding-bottom: 86px;
+    text-align: center;
+}
+.comments__title {
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 4px;
+    margin-top: 64px;
+    margin-bottom: 0;
+    color: #A7AAAD;
+}
+.comments__list {
+    @include mixins.listUnstyled;
+    min-width: 327px;
+}
+.comments__item {
+    padding-top: 64px;
+}
+.comments__desc {
+    font-family: 'Barlow';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.128571px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    color: #5B636D;
+}
+.comments__owner {
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.128571px;
+    color: #24303E;
+}
+.comments__staff {
+    font-family: 'Barlow';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: -0.1px;
+    margin-top: 9px;
+    margin-bottom: 0;
+    color: #A7AAAD;
+}
+
+
+@media only screen and (min-width: 900px) {
+    .comments__list {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+    .comments__item {
+        max-width: 350px;
+        padding-top: 81px;
+    }
+    .comments__desc {
+        margin-top: 58px;
+        margin-bottom: 69px;
+    }
+}
