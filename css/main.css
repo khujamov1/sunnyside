@@ -435,6 +435,7 @@ body {
 .hero {
   padding-top: 56px;
   padding-bottom: 136px;
+  background-color: #71C4D3;
   background-image: url("/images/herobg.png");
   background-repeat: no-repeat;
   background-position: center -88px;
